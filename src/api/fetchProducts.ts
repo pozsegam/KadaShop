@@ -1,7 +1,15 @@
 import axios from 'axios';
 
-const BASE_URL = "https://dummyjson.com/products";
+const GET_PRODUCTS_URL = 'https://dummyjson.com/products';
+const GET_ITEM_DETAILS_URL = 'https://dummyjson.com/products/';
+const LIMIT = 10;
 
-export const fetchProducts = () => {
-  return axios.get(BASE_URL).then((res) => console.log(res));
+export const fetchProducts = async () => {
+  const res = await axios.get(GET_PRODUCTS_URL, { params: { limit: LIMIT } });
+  return res.data;
+};
+
+export const fetchProduct = async (id: number) => {
+  const res = await axios.get(`${GET_ITEM_DETAILS_URL}/${id}`);
+  return res.data;
 };
