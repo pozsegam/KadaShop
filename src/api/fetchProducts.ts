@@ -4,8 +4,10 @@ const GET_PRODUCTS_URL = 'https://dummyjson.com/products';
 const GET_ITEM_DETAILS_URL = 'https://dummyjson.com/products/';
 const LIMIT = 10;
 
-export const fetchProducts = async () => {
-  const res = await axios.get(GET_PRODUCTS_URL, { params: { limit: LIMIT } });
+export const fetchProducts = async (skipFirst: number) => {
+  const res = await axios.get(GET_PRODUCTS_URL, {
+    params: { limit: LIMIT, skip: skipFirst },
+  });
   return res.data;
 };
 
