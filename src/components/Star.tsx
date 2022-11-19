@@ -5,6 +5,7 @@ interface StarProps {
 const Star = ({ fill }: StarProps) => {
   return (
     <svg
+      className="mr-1"
       width="24"
       height="24"
       viewBox="0 0 24 24"
