@@ -23,6 +23,9 @@ const Details = () => {
             slidesPerView={1}
             modules={[Navigation, Pagination]}
             navigation
+            pagination={{
+              clickable: true,
+            }}
             className="w-[600px] h-[480px]">
             {data?.images?.map((img: string) => {
               return (
@@ -43,25 +46,27 @@ const Details = () => {
           </Swiper>
         </section>
 
-        <section className="p-1">
-          <div className="flex justify-between items-center mb-3">
+        <section>
+          <div className="flex justify-between items-center">
             <h1 className="text-dark-text text-5xl font-semibold w-72">
               {data.title}
             </h1>
             <div className="flex items-center">
               <Rating rating={Number(data.rating)} />
-              <span className="font-bold">{data.rating}</span>
+              <span className="text-2xl font-bold ml-2">{data.rating}</span>
             </div>
           </div>
-          <p className="w-[300px]">{data.description}</p>
-          <ul className="mt-3 mb-6">
-            <li className="text-item-color font-medium mb-1">
+          <p className="font-medium text-xl w-[400px] my-5">
+            {data.description}
+          </p>
+          <ul>
+            <li className="text-item-color text-xl font-medium mb-2">
               Stock: {data.stock}
             </li>
-            <li className="text-item-color font-medium mb-1">
+            <li className="text-item-color text-xl font-medium mb-2">
               Brand: {data.brand}
             </li>
-            <li className="text-item-color font-medium mb-1">
+            <li className="text-item-color text-xl font-medium mb-2">
               Category: {data.category}
             </li>
           </ul>
