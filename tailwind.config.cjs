@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         'dark-text': '#323232',
         'main-purple': '#6100FF',
+        'item-color': '#00000099',
       },
       screens: {
         between: '1024px',
