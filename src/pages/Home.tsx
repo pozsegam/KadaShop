@@ -6,12 +6,11 @@ import { useProducts } from '../hooks/useProducts';
 const Home = () => {
   const observerElem = useRef(null);
   const { data, isError, hasNextPage, fetchNextPage } = useProducts();
-  console.log(data);
 
   const handleObserver = useCallback(
     (entries: any) => {
       const [target] = entries;
-      if (target.isIntersecting) {
+      if (target.isIntersecting && hasNextPage) {
         fetchNextPage();
       }
     },
