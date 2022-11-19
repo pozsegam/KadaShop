@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef } from 'react';
 
 import ProductCard from '../components/ProductCard';
 import { useProducts } from '../hooks/useProducts';
+import { Product } from '../models/Product';
 
 const Home = () => {
   const observerElem = useRef(null);
@@ -36,7 +37,7 @@ const Home = () => {
       <main>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 between:grid-cols-3 lg:grid-cols-4">
           {data?.pages.map((page): any =>
-            page.products.map((item: any) => {
+            page.products.map((item: Product) => {
               return (
                 <ProductCard
                   key={item.id}
@@ -45,7 +46,7 @@ const Home = () => {
                   price={item.price}
                   description={item.description}
                   thumbnail={item.thumbnail}
-                  name={item.title}
+                  title={item.title}
                 />
               );
             }),

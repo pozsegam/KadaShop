@@ -1,19 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 
+import { Product } from '../models/Product';
 import { ROUTE } from '../navigation/routes';
 
-type CardProps = {
-  id: number;
-  name: string;
-  description: string;
-  thumbnail: string;
-  price: number;
-  discountPercentage: number;
-};
-
-const ProductCard: React.FC<CardProps> = ({
+const ProductCard: React.FC<Product> = ({
   id,
-  name,
+  title,
   description,
   price,
   thumbnail,
@@ -30,12 +22,12 @@ const ProductCard: React.FC<CardProps> = ({
         <img
           className="block object-cover h-full w-full"
           src={thumbnail}
-          alt={name}
+          alt={title}
         />
       </div>
       <div className="container items-baseline flex justify-between mt-2">
         <h1 className="text-dark-text text-xl font-semibold">
-          {name.length > 15 ? `${name.substring(0, 15)}...` : name}
+          {title?.length > 15 ? `${title.substring(0, 15)}...` : title}
         </h1>
         <h1 className="text-dark-text text-2xl font-semibold">{price}$</h1>
       </div>
