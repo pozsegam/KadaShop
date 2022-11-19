@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Loading from '../components/Loading/Loading';
+import Rating from '../components/Rating';
 import Star from '../components/Star';
 import { useProduct } from '../hooks/useProduct';
 
@@ -30,7 +31,7 @@ const Details = () => {
             {data.title}
           </h1>
           <div className="flex items-center">
-            <Star />
+            <Rating rating={Number(data.rating)} />
             <span className="font-bold">{data.rating}</span>
           </div>
         </div>
