@@ -3,11 +3,8 @@ import ProductCard from '../components/ProductCard';
 import { useProducts } from '../hooks/useProducts';
 
 const Home = () => {
-  const { data, isLoading } = useProducts();
-
-  return isLoading ? (
-    <Loading />
-  ) : (
+  const { data, isLoading, isError } = useProducts();
+  return (
     <div className="container m-auto">
       <header>
         <h1 className="flex justify-center text-5xl font-bold m-12 text-center">
