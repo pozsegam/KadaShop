@@ -31,7 +31,7 @@ const Details = () => {
                   key={img}>
                   <div className="w-[500px] h-[480px] rounded-md overflow-hidden">
                     <img
-                      className="block w-full h-full object-cover "
+                      className="block w-full h-full object-contain "
                       key={img}
                       src={img}
                       alt={img}
