@@ -16,7 +16,7 @@ const Details = () => {
   return (
     <main className="w-screen h-screen">
       <div className="flex h-full flex-col justify-center items-center lg:flex-row">
-        <section className="mr-20">
+        <section className="lg:mr-20 ">
           <Swiper
             spaceBetween={20}
             slidesPerView={1}
