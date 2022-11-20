@@ -7,6 +7,7 @@
 - [Getting Started](#getting-started)
 - [Usage](#usage)
   - [Scripts](#scripts)
+- [Contact](#contact)
 
 ## About The Project
 
@@ -44,3 +45,7 @@ npm i
 - `npm run dev` builds a development server with hot reload
 - `npm run build` build a production version of the project
 - `npm run preview` running built version for preview before deployment
+
+## Contact
+
+Pozsgai Mate - [pozsega1999@gmail.com](pozsega1999@gmail.com)
