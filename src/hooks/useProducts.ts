@@ -8,8 +8,10 @@ export const useProducts = () => {
     ({ pageParam = 0 }) => fetchProducts(pageParam),
     {
       getNextPageParam: (lastPage, allPages) => {
-        const nextPage = allPages.length + 10;
-        return lastPage.length !== 0 ? nextPage : undefined;
+        console.log(lastPage);
+        console.log(allPages);
+        const nextPage = lastPage.skip + 10;
+        return lastPage.skip !== 100 ? nextPage : undefined;
       },
     },
   );
