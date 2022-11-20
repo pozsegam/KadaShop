@@ -35,15 +35,14 @@ const Details = () => {
               navigation
               pagination={{
                 clickable: true,
-              }}
-              className="w-[700px] h-[700px] flex items-center justify-center swiper">
+              }}>
               {data?.images?.map((img: string) => {
                 return (
                   <SwiperSlide
                     className="flex justify-center items-center"
                     key={img}>
                     <img
-                      className="block w-3/4 h-3/4 object-contain"
+                      className="block w-3/4 h-3/4 object-contain overflow-hidden"
                       key={img}
                       src={img}
                       alt={img}
@@ -56,7 +55,7 @@ const Details = () => {
 
           <section>
             <div className="flex justify-between items-center">
-              <h1 className="text-dark-text text-5xl font-semibold w-72 overflow break-words">
+              <h1 className="text-dark-text text-5xl font-semibold w-72 mr-6 break-words">
                 {data.title}
               </h1>
               <div className="flex items-center">
