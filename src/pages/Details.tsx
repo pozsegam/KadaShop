@@ -16,7 +16,7 @@ const Details = () => {
   return (
     <main className="w-screen h-screen">
       <div className="flex h-full flex-col justify-center items-center lg:flex-row">
-        <section className="lg:mr-20 ">
+        <section className="mb-20 lg:mr-20 ">
           <Swiper
             spaceBetween={20}
             slidesPerView={1}
@@ -25,20 +25,18 @@ const Details = () => {
             pagination={{
               clickable: true,
             }}
-            className="w-[600px] h-[480px]">
+            className="w-[800px] h-[800px] flex items-center justify-center">
             {data?.images?.map((img: string) => {
               return (
                 <SwiperSlide
                   className="flex justify-center items-center"
                   key={img}>
-                  <div className="w-[500px] h-[480px] rounded-md overflow-hidden">
-                    <img
-                      className="block w-full h-full object-contain "
-                      key={img}
-                      src={img}
-                      alt={img}
-                    />
-                  </div>
+                  <img
+                    className="block w-3/4 h-3/4 object-contain"
+                    key={img}
+                    src={img}
+                    alt={img}
+                  />
                 </SwiperSlide>
               );
             })}
