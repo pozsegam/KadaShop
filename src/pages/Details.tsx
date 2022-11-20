@@ -1,10 +1,8 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-// Import Swiper styles
 import { useParams } from 'react-router-dom';
 import { Navigation, Pagination } from 'swiper';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Rating from '../components/Rating';
@@ -80,7 +78,7 @@ const Details = () => {
             <h1 className="text-dark-text text-[64px] font-semibold">
               {data.price}$
             </h1>
-            <button className="bg-black text-white text-2xl font-semibold px-9 h-12 rounded-3xl">
+            <button className="bg-black text-white text-2xl font-semibold px-14 h-14 rounded-full">
               Add to cart
             </button>
           </div>
