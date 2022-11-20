@@ -76,7 +76,7 @@ const Details = () => {
                 Category: {data.category}
               </li>
             </ul>
-            <div className="mt-6 mb-2">
+            <div className="mt-6 mb-4 md:mb-8">
               <span className="text-white text-md font-semibold bg-main-purple px-6 py-2 rounded-3xl md:text-xl">
                 -{data.discountPercentage}%
               </span>
