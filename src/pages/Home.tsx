@@ -17,7 +17,7 @@ const Home = () => {
           name="description"
           content="Do you want to buy the perfect Christmas present, but dont have and idea for present? Search no more! Shop our products with a huge discount before Christmas."
         />
-        <link rel="canonical" href="/" />
+        <link rel="canonical" href="https://kada-shop.netlify.app/" />
       </Helmet>
 
       <div className="container m-auto">

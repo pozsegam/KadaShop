@@ -9,7 +9,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Rating from '../components/Rating';
 import { useProduct } from '../hooks/useProduct';
-import { ROUTE } from '../navigation/routes';
 
 const Details = () => {
   const { id } = useParams();
@@ -20,7 +19,7 @@ const Details = () => {
       <Helmet>
         <title>{`${data.title} on sale! | KadaShop`} </title>
         <meta name="description" content={data.description} />
-        <link rel="canonical" href={`${ROUTE.PRODUCT_DETAILS}/${id}`} />
+        <link rel="canonical" href="https://kada-shop.netlify.app/details" />
       </Helmet>
       <main className="w-screen h-screen">
         <div className="flex h-full flex-col justify-center items-center lg:flex-row">
