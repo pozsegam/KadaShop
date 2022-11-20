@@ -12,12 +12,12 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Shop</title>
+        <title>Shop | KadaShop</title>
         <meta
           name="description"
           content="Do you want to buy the perfect Christmas present, but dont have and idea for present? Search no more! Shop our products with a huge discount before Christmas."
         />
-        <link rel="canonical" href="/kada-shop" />
+        <link rel="canonical" href="/" />
       </Helmet>
 
       <div className="container m-auto">

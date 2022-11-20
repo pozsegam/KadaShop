@@ -12,11 +12,13 @@
 ## About The Project
 
 A simple webshop application with a wide variety of fascinating products.
+
+**Check out the [Demo Site](https://pozsegam.github.io/kada-shop/) to see the site in action.**
 List of features:
 
 - Displaying products on the main page, 10 at a time, upon reaching a certain position on the screen, it fetches 10 more product.
 - On the Detail Page we see the properties of different items, with a swiper to view all the images.
-- **Check out the [Demo Site](https://pozsegam.github.io/kada-shop/) to see the site in action.**
+- 404 page if you accidentally find yourself on an unexpected URL.
 
 ### Built With
 

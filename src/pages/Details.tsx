@@ -18,12 +18,9 @@ const Details = () => {
   return (
     <>
       <Helmet>
-        <title>{`${data.title} on sale!`} </title>
+        <title>{`${data.title} on sale! | KadaShop`} </title>
         <meta name="description" content={data.description} />
-        <link
-          rel="canonical"
-          href={`${ROUTE.PRODUCTS}${ROUTE.PRODUCT_DETAILS}/${id}`}
-        />
+        <link rel="canonical" href={`${ROUTE.PRODUCT_DETAILS}/${id}`} />
       </Helmet>
       <main className="w-screen h-screen">
         <div className="flex h-full flex-col justify-center items-center lg:flex-row">
