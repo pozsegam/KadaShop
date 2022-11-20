@@ -6,26 +6,7 @@ import { Product } from '../models/Product';
 
 const Home = () => {
   const observerElem = useRef(null);
-  const { data, isError, hasNextPage, fetchNextPage } = useProducts();
-
-  const handleObserver = useCallback(
-    (entries: any) => {
-      const [target] = entries;
-      if (target.isIntersecting && hasNextPage) {
-        fetchNextPage();
-      }
-    },
-    [fetchNextPage, hasNextPage],
-  );
-
-  useEffect(() => {
-    const element: any = observerElem.current;
-    const option = { threshold: 0 };
-
-    const observer = new IntersectionObserver(handleObserver, option);
-    observer.observe(element);
-    return () => observer.unobserve(element);
-  }, [fetchNextPage, hasNextPage, handleObserver]);
+  const { data, isError } = useProducts(observerElem);
 
   return (
     <div className="container m-auto">
