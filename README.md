@@ -4,21 +4,17 @@
 
 - [About The Project](#about-the-project)
   - [Built With](#built-with)
-    <!-- - [Getting Started](#getting-started) -->
-      <!-- - [Prerequisites](#prerequisites) -->
-      <!-- - [Installation](#installation) -->
-    <!-- - [Usage](#usage) -->
-      <!-- - [Scripts](#scripts) -->
-    <!-- - [License](#license) -->
-    <!-- - [Changelog](#changelog) -->
-    <!-- - [Code Style](#code-style) -->
-    <!-- - [Documentation](#documentation) -->
-    <!-- - [Contact](#contact) -->
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+  - [Scripts](#scripts)
 
 ## About The Project
 
 A simple webshop application with a wide variety of fascinating products.
+List of features:
 
+- Displaying products on the main page, 10 at a time, upon reaching a certain position on the screen, it fetches 10 more product.
+- On the Detail Page we see the properties of different items, with a swiper to view all the images.
 <!-- **Check out the [Demo Site](https://apexmovies.gatsbyjs.io) to see the site in action.** -->
 
 ### Built With
@@ -41,4 +37,10 @@ npm i
 ## Usage
 
 - run `npm run dev` to build a development server with hot reload
-<!-- - run `npm run build` to build a production version of the projec -->
+- run `npm run build` to build a production version of the project
+
+### Scripts
+
+- `npm run dev` builds a development server with hot reload
+- `npm run build` build a production version of the project
+- `npm run preview` running built version for preview before deployment
