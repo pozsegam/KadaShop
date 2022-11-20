@@ -16,7 +16,7 @@ List of features:
 
 - Displaying products on the main page, 10 at a time, upon reaching a certain position on the screen, it fetches 10 more product.
 - On the Detail Page we see the properties of different items, with a swiper to view all the images.
-<!-- **Check out the [Demo Site](https://apexmovies.gatsbyjs.io) to see the site in action.** -->
+- **Check out the [Demo Site](https://pozsegam.github.io/KadaShop/) to see the site in action.**
 
 ### Built With
 
