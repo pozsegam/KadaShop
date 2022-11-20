@@ -13,7 +13,7 @@
 
 A simple webshop application with a wide variety of fascinating products.
 
-**Check out the [Demo Site](https://pozsegam.github.io/kada-shop/) to see the site in action.**
+**Check out the [Demo Site](https://kada-shop.netlify.app) to see the site in action.**
 List of features:
 
 - Displaying products on the main page, 10 at a time, upon reaching a certain position on the screen, it fetches 10 more product.
