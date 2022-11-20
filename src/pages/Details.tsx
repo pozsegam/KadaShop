@@ -32,14 +32,14 @@ const Details = () => {
               pagination={{
                 clickable: true,
               }}
-              className="flex items-center justify-center h-[300px] w-[400px] md:w-[600px] md:h-[500px]">
+              className="flex items-center justify-center h-[300px] w-[400px] md:w-[600px] md:h-[500px] lg:w-[700px] lg:h-[600px]">
               {data?.images?.map((img: string) => {
                 return (
                   <SwiperSlide
                     className="flex justify-center items-center"
                     key={img}>
                     <img
-                      className="block  w-3/4 h-3/4 object-contain overflow-hidden"
+                      className="block w-3/4 h-3/4 object-contain overflow-hidden"
                       key={img}
                       src={img}
                       alt={img}
