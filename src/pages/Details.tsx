@@ -47,7 +47,7 @@ const Details = () => {
 
         <section>
           <div className="flex justify-between items-center">
-            <h1 className="text-dark-text text-5xl font-semibold w-72">
+            <h1 className="text-dark-text text-5xl font-semibold w-72 overflow break-words">
               {data.title}
             </h1>
             <div className="flex items-center">
