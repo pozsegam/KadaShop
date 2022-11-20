@@ -1,4 +1,4 @@
 export const ROUTE = {
-  PRODUCTS: '/KadaShop',
-  PRODUCT_DETAILS: '/details',
+  PRODUCTS: '/',
+  PRODUCT_DETAILS: 'details',
 };

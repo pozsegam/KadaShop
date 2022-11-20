@@ -15,9 +15,7 @@ const ProductCard: React.FC<Product> = ({
 
   return (
     <div
-      onClick={() =>
-        navigate(`${ROUTE.PRODUCTS}${ROUTE.PRODUCT_DETAILS}/${id}`)
-      }
+      onClick={() => navigate(`${ROUTE.PRODUCT_DETAILS}/${id}`)}
       className="container w-72 h-80 mx-auto bg-white py-2.5 px-3  rounded-md border border-[#DBDBDB] cursor-pointer">
       <div className="container relative overflow-hidden h-36 rounded-md">
         <span className="absolute right-2 top-2 text-white text-sm font-semibold bg-main-purple px-4 py-1 rounded-2xl">

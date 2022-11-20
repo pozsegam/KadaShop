@@ -1,6 +1,6 @@
 import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 
 import Loading from './components/Loading/Loading';
 import { ROUTE } from './navigation/routes';
@@ -18,15 +18,15 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <React.Suspense fallback={<Loading />}>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path={`${ROUTE.PRODUCTS}`} element={<Home />} />
             <Route
-              path={`${ROUTE.PRODUCTS}${ROUTE.PRODUCT_DETAILS}/:id`}
+              path={`${ROUTE.PRODUCT_DETAILS}/:id`}
               element={<Details />}
             />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </React.Suspense>
     </QueryClientProvider>
   );
