@@ -33,7 +33,7 @@ List of features:
 
 ```bash
 git clone https://github.com/pozsegam/KadaShop.git
-cd kadaShop
+cd kada-shop
 npm i
 ```
 
