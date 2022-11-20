@@ -52,39 +52,41 @@ const Details = () => {
 
           <section className="ml-8 md:ml-0 ">
             <div className="flex flex-col text-left md:flex-row  items-center">
-              <h1 className="text-dark-text text-5xl font-semibold break-words w-72 text-center md:mr-6 md:text-left ">
+              <h1 className="text-dark-text text-3xl font-semibold break-words w-72 text-center md:text-5xl md:mr-6 md:text-left ">
                 {data.title}
               </h1>
               <div className="flex items-center mt-4 md:mt-0">
                 <Rating rating={Number(data.rating)} />
-                <span className="text-2xl font-bold ml-2">{data.rating}</span>
+                <span className="text-xl font-bold ml-2 md:text-2xl">
+                  {data.rating}
+                </span>
               </div>
             </div>
-            <p className="font-medium text-xl my-5 break-words w-[400px] text-center md:text-left">
+            <p className="font-medium text-md my-5 break-words w-[350px] text-center md:w-[400px] md:text-xl md:text-left">
               {data.description}
             </p>
             <ul>
-              <li className="text-item-color text-xl font-medium mb-2">
+              <li className="text-item-color text-md font-medium mb-2 md:text-xl">
                 Stock: {data.stock}
               </li>
-              <li className="text-item-color text-xl font-medium mb-2">
+              <li className="text-item-color text-md font-medium mb-2 md:text-xl">
                 Brand: {data.brand}
               </li>
-              <li className="text-item-color text-xl font-medium mb-2">
+              <li className="text-item-color text-md font-medium mb-2 md:text-xl">
                 Category: {data.category}
               </li>
             </ul>
             <div className="mt-6 mb-2">
-              <span className="text-white text-xl font-semibold bg-main-purple px-6 py-2 rounded-3xl">
+              <span className="text-white text-md font-semibold bg-main-purple px-6 py-2 rounded-3xl md:text-xl">
                 -{data.discountPercentage}%
               </span>
             </div>
 
-            <div className="flex justify-start  items-center md:justify-between">
-              <span className="text-dark-text text-[64px] font-semibold mr-8">
+            <div className="flex items-center justify-between">
+              <span className="text-dark-text text-5xl font-semibold md:text-[64px]">
                 {data.price}$
               </span>
-              <button className="bg-black text-white text-2xl font-semibold px-7 h-14 rounded-full md:px-14">
+              <button className="bg-black text-white text-lg font-semibold px-7 h-14 rounded-full md:text-2xl md:px-14">
                 Add to cart
               </button>
             </div>
