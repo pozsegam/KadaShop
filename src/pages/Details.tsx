@@ -24,7 +24,7 @@ const Details = () => {
       </Helmet>
       <main className="w-screen h-screen">
         <div className="flex h-full flex-col justify-center items-center lg:flex-row">
-          <section className="mb-20 lg:mr-20 ">
+          <section className="mb-10 lg:mr-20 ">
             <Swiper
               spaceBetween={20}
               slidesPerView={1}
@@ -32,14 +32,15 @@ const Details = () => {
               navigation
               pagination={{
                 clickable: true,
-              }}>
+              }}
+              className="flex items-center justify-center h-[300px] w-[400px] md:w-[600px] md:h-[500px]">
               {data?.images?.map((img: string) => {
                 return (
                   <SwiperSlide
                     className="flex justify-center items-center"
                     key={img}>
                     <img
-                      className="block w-3/4 h-3/4 object-contain overflow-hidden"
+                      className="block  w-3/4 h-3/4 object-contain overflow-hidden"
                       key={img}
                       src={img}
                       alt={img}
@@ -50,17 +51,17 @@ const Details = () => {
             </Swiper>
           </section>
 
-          <section>
-            <div className="flex justify-between items-center">
-              <h1 className="text-dark-text text-5xl font-semibold w-72 mr-6 break-words">
+          <section className="ml-8 md:ml-0 ">
+            <div className="flex flex-col text-left md:flex-row  items-center">
+              <h1 className="text-dark-text text-5xl font-semibold break-words w-72 text-center md:mr-6 md:text-left ">
                 {data.title}
               </h1>
-              <div className="flex items-center">
+              <div className="flex items-center mt-4 md:mt-0">
                 <Rating rating={Number(data.rating)} />
                 <span className="text-2xl font-bold ml-2">{data.rating}</span>
               </div>
             </div>
-            <p className="font-medium text-xl w-[400px] my-5">
+            <p className="font-medium text-xl my-5 break-words w-[400px] text-center md:text-left">
               {data.description}
             </p>
             <ul>
@@ -80,11 +81,11 @@ const Details = () => {
               </span>
             </div>
 
-            <div className="flex items-center justify-between">
-              <span className="text-dark-text text-[64px] font-semibold">
+            <div className="flex justify-start  items-center md:justify-between">
+              <span className="text-dark-text text-[64px] font-semibold mr-8">
                 {data.price}$
               </span>
-              <button className="bg-black text-white text-2xl font-semibold px-14 h-14 rounded-full">
+              <button className="bg-black text-white text-2xl font-semibold px-7 h-14 rounded-full md:px-14">
                 Add to cart
               </button>
             </div>
