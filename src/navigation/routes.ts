@@ -1,4 +1,4 @@
 export const ROUTE = {
   PRODUCTS: '/',
-  PRODUCT_DETAILS: 'details',
+  PRODUCT_DETAILS: '/details',
 };
