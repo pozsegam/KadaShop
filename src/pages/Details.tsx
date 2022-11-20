@@ -1,5 +1,6 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import { useParams } from 'react-router-dom';
 import { Navigation, Pagination } from 'swiper';

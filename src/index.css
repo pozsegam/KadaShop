@@ -13,3 +13,7 @@ html {
 .swiper-button-prev {
   color: black;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: #6100ff;
+}
