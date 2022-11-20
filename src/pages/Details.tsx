@@ -9,6 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Rating from '../components/Rating';
 import { useProduct } from '../hooks/useProduct';
+import { ROUTE } from '../navigation/routes';
 
 const Details = () => {
   const { id } = useParams();
@@ -19,7 +20,10 @@ const Details = () => {
       <Helmet>
         <title>{`${data.title} on sale!`} </title>
         <meta name="description" content={data.description} />
-        <link rel="canonical" href={`/KadaShop/${id}`} />
+        <link
+          rel="canonical"
+          href={`${ROUTE.PRODUCTS}${ROUTE.PRODUCT_DETAILS}/${id}`}
+        />
       </Helmet>
       <main className="w-screen h-screen">
         <div className="flex h-full flex-col justify-center items-center lg:flex-row">
@@ -32,7 +36,7 @@ const Details = () => {
               pagination={{
                 clickable: true,
               }}
-              className="w-[700px] h-[700px] flex items-center justify-center">
+              className="w-[700px] h-[700px] flex items-center justify-center swiper">
               {data?.images?.map((img: string) => {
                 return (
                   <SwiperSlide
@@ -81,9 +85,9 @@ const Details = () => {
             </div>
 
             <div className="flex items-center justify-between">
-              <h1 className="text-dark-text text-[64px] font-semibold">
+              <span className="text-dark-text text-[64px] font-semibold">
                 {data.price}$
-              </h1>
+              </span>
               <button className="bg-black text-white text-2xl font-semibold px-14 h-14 rounded-full">
                 Add to cart
               </button>
