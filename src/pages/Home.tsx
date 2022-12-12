@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Shop | KadaShop</title>
+        <title>Shop | PMShop</title>
         <meta
           name="description"
           content="Do you want to buy the perfect Christmas present, but dont have and idea for present? Search no more! Shop our products with a huge discount before Christmas."

@@ -17,7 +17,7 @@ const Details = () => {
   return (
     <>
       <Helmet>
-        <title>{`${data.title} on sale! | KadaShop`} </title>
+        <title>{`${data.title} on sale! | PMShop`} </title>
         <meta name="description" content={data.description} />
         <link rel="canonical" href="https://kada-shop.netlify.app/details" />
       </Helmet>
