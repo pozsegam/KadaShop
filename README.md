@@ -32,7 +32,7 @@ List of features:
 ### Installation
 
 ```bash
-git clone https://github.com/pozsegam/KadaShop.git
+git clone https://github.com/pozsegam/pm-shop.git
 cd pm-shop
 npm i
 ```
